@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+  <main class="main-container">
+    <div class="logo-container">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <div class="calc-container">
+      <div class="left">
+        <p>Bill</p>
+        <div class="pay-input">
+          <img src="./images/icon-dollar.svg" alt="icon-dollar">
+          <input type="number" value="142.55">
+        </div>
+
+        <div class="select-tip-container">
+          <p>Select Tip %</p>
+          <div class="porcent-tip-container">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn selected">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <input class="custom" type="number" placeholder="Custom">
+          </div>
+        </div>
+        <div class="people-span">
+          <p>Number of People</p>
+          <span class="alert hidden">Can´t be zero</span>
+        </div>
+        
+        <div class="people-input">
+          <img src="./images/icon-person.svg" alt="icon-person">
+          <input type="number" value="5">
+        </div>
+      </div>
+
+      <div class="tip-result-container">
+        <div class="amount-container">
+          <div class="tip-amount">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <span class="amount">$0.00</span>
+        </div>
+
+        <div class="total-container">
+          <div class="tip-total">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <span class="total">$0.00</span>
+        </div>
+
+        <button class="btn-reset">RESET</button>
+      </div>
+
+    </div>
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/DaB3L92" target="_blank">Damián Rocha</a>.
+  </footer>
+</body>
+
+</html>
